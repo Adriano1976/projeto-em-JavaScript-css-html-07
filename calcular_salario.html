@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+ 	<head>
+		<meta charset="UTF-8">
+		<title>Calcular Salário</title>
+		<script type="text/javascript" src="controle_salario.js"></script>	
+		<link rel="stylesheet" type="text/css" href="flame_area.css">
+	</head>
+	<body>		
+		<form>
+			<br><br>
+			<label>Nome do Funcionário:</label>
+		    <input type="text" name="nome" size="32" maxlength="32"><br><br>	
+		    <label>Sexo:</label>
+			<p>
+			<input type="radio" name="sexo" value="masculino">Masculino<br>
+			<input type="radio" name="sexo" value="feminino">Feminino<br>
+			</p>	
+			<label>Salário Base: R$ </label>
+			<input type="text" name="salario_base" size="8" maxlangth="8"><br><br>		
+			<label>Percentual de Aumento:</label>
+			<input type="text" name="percentual" size="5" maxlangth="5"><br><br>					
+			<input type="button" name="button" value="Calcular Salário" onclick="mostrar_salario(this.form)">	
+			<input type="reset" name="limpar" value="Limpar Campo">
+		</form>	
+	</body>
+</html>
